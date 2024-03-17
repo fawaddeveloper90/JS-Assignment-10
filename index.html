@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Answer1
+        // Ek array banaya gaya hai
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// slice() ka istemal karke specific range ke elements ko nikaala gaya hai
+let slicedArray = numbers.slice(2, 6);
+
+// Naya array 'slicedArray' mein specific range ke elements hain
+console.log(slicedArray); 
+
+//Answer2
+// Di gayi array
+let fruits = ['Apple', 'Banana', 'Cherry', 'Date', 'Watermelon'];
+
+// Splice() method ka istemal karke kuch elements ko hatakar unhein ek alag array mein store kiya gaya hai
+let removedElements = fruits.splice(1, 3);
+
+// 'removedElements' mein hatai gayi elements hain
+console.log(removedElements);
+
+// Ab 'fruits' array mein remaining elements hain
+console.log(fruits);
+
+// Answer 3
+// Input array
+let array1 = [1, 2, 3, 4, 5];
+
+// Shift karke pehla element hatao aur variable mein store karo
+let shiftedElement = array1.shift();
+
+// Output
+console.log("Shifted Element:", shiftedElement);
+console.log("Updated Array 1:", array1);
+
+// Answer 4
+// Input array
+let array2 = [2, 3, 4, 5];
+
+// Unshift karke naya element add karo
+array2.unshift(1);
+
+// Output
+console.log("Updated Array 2:", array2);
+
+//  Answer 5
+// Input array
+let array3 = [1, 2, 3, 4,];
+
+// push karke naya element add karo
+array3.push(5);
+
+// Output
+console.log("Updated Array 3:", array3);
+
+// Answer 6
+// Input array
+let array5 = [1, 2, 3, 4, 5];
+
+// Pop karke ek element remove karo aur variable mein store karo
+let removedElement = array5.pop();
+
+// Output
+console.log("Removed Element:", removedElement);
+console.log("Updated Array 5:", array5);
+
+// Answer 7
+// Input array
+let originalArray = [1, 2, 3, 4, 5];
+
+// Slice karke kuch elements ko naye array mein move karo
+let newArray = originalArray.slice(0, 4); 
+
+// Output
+console.log("Original Array:", originalArray);
+console.log("New Array:", newArray);
+
+// Answer 8
+// Input array
+let originalArray2 = [1, 2, 3, 4, 5];
+
+// Splice karke kuch elements ko remove karo aur unhein naye array mein store karo
+let removedElements2 = originalArray2.splice(1, 2);
+
+// Output
+console.log("Removed Elements:", removedElements2);
+console.log("Updated Array:", originalArray2);
+
+// Answer 9
+// Input array
+let originalArray3 = [1, 2, 3, 4, 5];
+
+// Shift karke ek ek karke elements ko remove karo aur unhein alag-alag variables mein store karo
+let firstElement = originalArray3.shift();
+let secondElement = originalArray3.shift();
+let thirdElement = originalArray3.shift();
+
+// Output
+console.log("First Element:", firstElement);
+console.log("Second Element:", secondElement);
+console.log("Third Element:", thirdElement);
+console.log("Updated Array:", originalArray);
+
+// Answer 10
+// Input array
+let originalArray4 = [1, 2, 3];
+
+// Push karke multiple elements ek saath add karo
+originalArray4.push(4, 5, 6);
+
+// Output
+console.log("Updated Array:", originalArray4);
+
+    </script>
+</body>
+</html>
